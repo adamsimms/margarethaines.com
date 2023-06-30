@@ -1,0 +1,734 @@
+.label-info {
+  background-color: #5bc0de;
+}
+
+.label {
+  display: inline;
+  padding: 0.1em 0.3em 0.1em;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+#formatsmanager {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1280px;
+}
+#formatsmanager .color-rectangle {
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #7e8993;
+  display: inline-block;
+  margin-right: 0;
+  cursor: pointer;
+  border-right: none;
+}
+#formatsmanager input.colorpicker:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #7e8993;
+}
+#formatsmanager input.colorpicker {
+  width: 79px !important;
+  padding: 0 0 0 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#formatsmanager .table > tbody {
+  border-top: 2px solid white !important;
+}
+#formatsmanager .table > tbody:first-child {
+  border-top: none !important;
+}
+#formatsmanager .textformat-collapsable {
+  cursor: pointer;
+}
+#formatsmanager .expand-arrow {
+  position: relative;
+  top: -6px;
+}
+#formatsmanager .expand-arrow:before {
+  content: "\f142";
+}
+#formatsmanager .lay-textformat-collapsed .expand-arrow:before {
+  content: "\f140";
+}
+#formatsmanager .expand-arrow:before {
+  font: 400 20px/0 dashicons;
+  speak: none;
+  display: inline;
+  top: 5px;
+  right: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+  opacity: 0.5;
+}
+#formatsmanager .format-name,
+#formatsmanager .format-type-indicator,
+#formatsmanager .format-html-class {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#formatsmanager .format-name {
+  width: 200px;
+}
+#formatsmanager .format-type-indicator {
+  width: 150px;
+}
+#formatsmanager .format-html-class {
+  width: 170px;
+}
+#formatsmanager .lay-textformat-collapsed .row-wrap {
+  display: none;
+}
+#formatsmanager .lay-textformats-input-group-addon {
+  display: inline-block;
+  margin-left: 5px;
+}
+#formatsmanager .variable-font-headline {
+  margin-bottom: 10px;
+}
+#formatsmanager .variable-font-slider input {
+  padding-left: 0;
+  padding-right: 0;
+}
+#formatsmanager .variable-font-slider td:last-child {
+  width: 110px;
+}
+#formatsmanager .variable-font-slider input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6px 0;
+}
+#formatsmanager .variable-font-slider input[type=range]:focus {
+  outline: none;
+}
+#formatsmanager .variable-font-slider input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #dddddd;
+  border-radius: 25px;
+}
+#formatsmanager .variable-font-slider input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #666666, 0px 0px 0px #737373;
+  border: 1px solid #bebebe;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.5px;
+}
+#formatsmanager .variable-font-slider input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #dddddd;
+}
+#formatsmanager .variable-font-slider input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #dddddd;
+  border-radius: 25px;
+}
+#formatsmanager .variable-font-slider input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #666666, 0px 0px 0px #737373;
+  border: 1px solid #bebebe;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+}
+#formatsmanager .variable-font-slider input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+#formatsmanager .variable-font-slider input[type=range]::-ms-fill-lower {
+  background: #dddddd;
+  border: 1px solid #bebebe;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+#formatsmanager .variable-font-slider input[type=range]::-ms-fill-upper {
+  background: #dddddd;
+  border: 1px solid #bebebe;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+#formatsmanager .variable-font-slider input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #666666, 0px 0px 0px #737373;
+  border: 1px solid #bebebe;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 6px;
+}
+#formatsmanager .variable-font-slider input[type=range]:focus::-ms-fill-lower {
+  background: #dddddd;
+}
+#formatsmanager .variable-font-slider input[type=range]:focus::-ms-fill-upper {
+  background: #dddddd;
+}
+#formatsmanager .variable-font-slider-collection-view {
+  width: 100%;
+}
+#formatsmanager button:focus {
+  outline: 0 !important;
+}
+#formatsmanager .delete-format-row {
+  width: 80px;
+}
+#formatsmanager .table > tbody > tr > th.info {
+  background-color: #d0efff !important;
+}
+#formatsmanager th {
+  font-size: 14px;
+}
+#formatsmanager .panel-footer td {
+  vertical-align: middle;
+}
+#formatsmanager td {
+  vertical-align: top;
+}
+#formatsmanager td > * {
+  vertical-align: top;
+}
+#formatsmanager tbody {
+  border-top-width: 0 !important;
+}
+#formatsmanager .format {
+  padding-bottom: 50px !important;
+}
+#formatsmanager .format-type-indicator {
+  font-weight: lighter;
+  margin-left: 10px;
+}
+#formatsmanager .format-html-class {
+  font-weight: lighter;
+  margin-left: 10px;
+  color: #ababab;
+}
+#formatsmanager th {
+  position: relative;
+  padding-left: 30px !important;
+}
+#formatsmanager .drag-icon {
+  top: 0;
+  left: 0;
+  width: 38px !important;
+  height: 47px !important;
+  display: inline-block;
+  position: absolute;
+  cursor: grab;
+  box-sizing: content-box;
+}
+#formatsmanager .drag-icon::before {
+  background-image: url(../img/drag_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  bottom: 0;
+  right: 0;
+  top: 13px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  display: block;
+  left: 6px;
+  opacity: 0.2;
+  position: absolute;
+}
+#formatsmanager .format-preview-wrap {
+  width: 100%;
+  background-color: white;
+}
+#formatsmanager .format-name-text-wrap {
+  padding-top: 5px;
+  display: inline-block;
+}
+#formatsmanager .textformat-Default .js-delete-row {
+  display: none;
+}
+#formatsmanager .textformat-Default .textformat-type-row {
+  display: none;
+}
+#formatsmanager th {
+  height: 47px;
+}
+#formatsmanager .input-group {
+  width: 143px;
+}
+#formatsmanager .attributes-table tbody tr td:first-child {
+  width: 146px !important;
+}
+#formatsmanager .attributes-table[data-type=Paragraph] .headline-type-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .line-height-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .headline-type-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .space-bottom-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .space-top-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .text-align-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .text-indent-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .phone-space-top-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .phone-space-bottom-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .tablet-space-top-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Character] .tablet-space-bottom-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Headline] .text-indent-row {
+  display: none;
+}
+#formatsmanager .attributes-table[data-type=Headline] .js-font-style-border-bottom,
+#formatsmanager .attributes-table[data-type=Paragraph] .js-font-style-border-bottom {
+  display: none;
+}
+#formatsmanager .attributes-table td {
+  white-space: nowrap;
+}
+#formatsmanager .row-wrap {
+  background-color: white;
+  font-size: 14px;
+}
+#formatsmanager .font-table th:last-child {
+  width: 112px;
+}
+#formatsmanager .font-table th:first-child {
+  width: 290px;
+}
+#formatsmanager .panel-footer {
+  padding-right: 3px;
+}
+#formatsmanager .formatsmanager-panel {
+  margin-bottom: 10px;
+}
+#formatsmanager .format-preview {
+  word-break: break-all;
+}
+#formatsmanager .format-preview:first-child .preview-type {
+  margin-top: 0;
+}
+#formatsmanager .preview-type {
+  margin: 10px 0;
+  color: white;
+  background-color: #ddd;
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+#formatsmanager .format-name-input {
+  width: 150px;
+}
+#formatsmanager .panel-footer select {
+  width: 150px;
+}
+#formatsmanager .panel-footer td {
+  position: relative;
+}
+#formatsmanager .parsley-errors-list {
+  display: none;
+}
+#formatsmanager th:first-child {
+  width: 30%;
+}
+#formatsmanager input[type=number] {
+  width: 109px;
+}
+#formatsmanager .font-weight-select {
+  width: 109px !important;
+}
+#formatsmanager .font-select {
+  width: 109px !important;
+}
+#formatsmanager .js-headline-type-select {
+  width: 109px !important;
+}
+#formatsmanager .js-existing-format-type-select {
+  width: 109px !important;
+}
+#formatsmanager .font-style-row button {
+  width: 37px !important;
+}
+#formatsmanager .space-bottom-preview,
+#formatsmanager .space-top-preview {
+  height: 0;
+  background-color: #cafcfc;
+}
+#formatsmanager .space-bottom,
+#formatsmanager .space-top,
+#formatsmanager .tablet-space-top,
+#formatsmanager .tablet-space-bottom,
+#formatsmanager .phone-space-top,
+#formatsmanager .phone-space-bottom {
+  background-color: #cafcfc;
+}
+#formatsmanager .phone-font-size-row > td {
+  padding-top: 30px !important;
+}
+#formatsmanager .tablet-font-size-row > td {
+  padding-top: 30px !important;
+}
+
+#formatsmanager_json,
+#fontmanager_json,
+#formatsmanager_defaultformat_backup_json {
+  width: 100%;
+  max-width: 900px;
+  height: 200px;
+  display: none;
+}
+
+#formatsmanager {
+  /**
+   * This is for convenience of developing only. The minified result should go into
+   * the _css var in iris.js. Run grunt cssmin to generate.
+   */
+  /* Palettes*/
+}
+#formatsmanager .wp-picker-clear {
+  height: 28px;
+}
+#formatsmanager .wp-color-picker {
+  width: 80px;
+  border-radius: 3px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+#formatsmanager .wp-picker-container .hidden {
+  display: none;
+}
+#formatsmanager .wp-color-result-text {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1px 3px;
+  border-radius: 3px;
+  display: block;
+}
+#formatsmanager .iris-picker {
+  display: block;
+  position: relative;
+}
+#formatsmanager .iris-picker, #formatsmanager .iris-picker * {
+  box-sizing: content-box;
+}
+#formatsmanager input + .iris-picker {
+  margin-top: 5px;
+}
+#formatsmanager .iris-error {
+  background-color: #ffafaf;
+}
+#formatsmanager .iris-border {
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  width: 200px;
+  background-color: #fff;
+}
+#formatsmanager .iris-picker-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#formatsmanager .iris-border .iris-picker-inner {
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+}
+#formatsmanager .iris-picker .iris-square-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#formatsmanager .iris-picker .iris-square,
+#formatsmanager .iris-picker .iris-slider,
+#formatsmanager .iris-picker .iris-square-inner,
+#formatsmanager .iris-picker .iris-palette {
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 12.5%;
+  float: left;
+  margin-right: 5%;
+}
+#formatsmanager .iris-picker .iris-square {
+  width: 76%;
+  margin-right: 10%;
+  position: relative;
+}
+#formatsmanager .iris-picker .iris-square-inner {
+  width: auto;
+  margin: 0;
+}
+#formatsmanager .iris-ie-9 .iris-square,
+#formatsmanager .iris-ie-9 .iris-slider,
+#formatsmanager .iris-ie-9 .iris-square-inner,
+#formatsmanager .iris-ie-9 .iris-palette {
+  box-shadow: none;
+  border-radius: 0;
+}
+#formatsmanager .iris-ie-9 .iris-square,
+#formatsmanager .iris-ie-9 .iris-slider,
+#formatsmanager .iris-ie-9 .iris-palette {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+#formatsmanager .iris-ie-lt9 .iris-square,
+#formatsmanager .iris-ie-lt9 .iris-slider,
+#formatsmanager .iris-ie-lt9 .iris-square-inner,
+#formatsmanager .iris-ie-lt9 .iris-palette {
+  outline: 1px solid #aaa;
+}
+#formatsmanager .iris-ie-lt9 .iris-square .ui-slider-handle {
+  outline: 1px solid #aaa;
+  background-color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+#formatsmanager .iris-ie-lt9 .iris-square .iris-square-handle {
+  background: none;
+  border: 3px solid #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+#formatsmanager .iris-picker .iris-strip {
+  margin-right: 0;
+  position: relative;
+}
+#formatsmanager .iris-picker .iris-strip .ui-slider-handle {
+  position: absolute;
+  background: none;
+  margin: 0;
+  right: -3px;
+  left: -3px;
+  border: 4px solid #aaa;
+  border-width: 4px 3px;
+  width: auto;
+  height: 6px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  z-index: 5;
+  cursor: ns-resize;
+}
+#formatsmanager .iris-strip .ui-slider-handle:before {
+  content: " ";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: -3px;
+  bottom: -3px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+#formatsmanager .iris-picker .iris-slider-offset {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+#formatsmanager .iris-picker .iris-square-handle {
+  background: transparent;
+  border: 5px solid #aaa;
+  border-radius: 50%;
+  border-color: rgba(128, 128, 128, 0.5);
+  box-shadow: none;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  cursor: move;
+  opacity: 1;
+  z-index: 10;
+}
+#formatsmanager .iris-picker .ui-state-focus .iris-square-handle {
+  opacity: 0.8;
+}
+#formatsmanager .iris-picker .iris-square-handle:hover {
+  border-color: #999;
+}
+#formatsmanager .iris-picker .iris-square-value:focus .iris-square-handle {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+  opacity: 0.8;
+}
+#formatsmanager .iris-picker .iris-square-handle:hover::after {
+  border-color: #fff;
+}
+#formatsmanager .iris-picker .iris-square-handle::after {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  left: -4px;
+  top: -4px;
+  border: 3px solid #f9f9f9;
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  content: " ";
+}
+#formatsmanager .iris-picker .iris-square-value {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+}
+#formatsmanager .iris-ie-lt9 .iris-square-value, #formatsmanager .iris-mozilla .iris-square-value {
+  width: 1px;
+  height: 1px;
+}
+#formatsmanager .iris-palette-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+#formatsmanager .iris-border .iris-palette-container {
+  left: 10px;
+  bottom: 10px;
+}
+#formatsmanager .iris-picker .iris-palette {
+  margin: 0;
+  cursor: pointer;
+}
+#formatsmanager .iris-square-handle, #formatsmanager .ui-slider-handle {
+  border: 0;
+  outline: 0;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6px 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #dddddd;
+  border-radius: 25px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #666666, 0px 0px 0px #737373;
+  border: 1px solid #bebebe;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #dddddd;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #dddddd;
+  border-radius: 25px;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #666666, 0px 0px 0px #737373;
+  border: 1px solid #bebebe;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #dddddd;
+  border: 1px solid #bebebe;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #dddddd;
+  border: 1px solid #bebebe;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #666666, 0px 0px 0px #737373;
+  border: 1px solid #bebebe;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 6px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #dddddd;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #dddddd;
+}

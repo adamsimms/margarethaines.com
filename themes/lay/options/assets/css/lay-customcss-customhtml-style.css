@@ -1,0 +1,32 @@
+#lay-custom-head-content-editor, #lay-custom-css-editor, #lay-custom-css-mobile-editor, #lay-custom-css-desktop-editor, #lay-custom-htmltop-editor, #lay-custom-htmlbottom-editor{
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.lay-ace-editor-wrap{
+	width: 90%;
+	max-width: 1200px;
+	padding: 20px 10px 20px 0;
+}
+
+.lay-ace-editor-wrap h3{
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.lay-ace-editor-wrap p{
+	max-width: 900px;
+}
+
+/*hide first 5 table rows of css & html options, which are the textareas for custom head content, desktop css and mobile css*/
+table.form-table{
+	/* display: none; */
+}
+
+table.form-table tr{
+	display: none;
+}
+table.form-table tr:first-child{
+	display: block;
+}
